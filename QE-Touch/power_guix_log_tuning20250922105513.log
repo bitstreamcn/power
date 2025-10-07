@@ -1,0 +1,67 @@
+***** 2025/09/22 10:55:13 *****
+QE Version                                        :4.2.0.v20250714-0546
+Project Path                                      :E:\e2_studio\workspace\power_guix
+Configuration File                                :power_guix
+IDE                                               :e2 studio with Emulator
+Emulator                                          :
+MCU                                               :RA4M2 R7FA4M2AD3CFL
+<< METHOD 0 >>
+[Button(self) 0]
+TS                                                : TS02,
+[Button(self) 1]
+TS                                                : TS05,
+
+<<<< Tuning Type : Normal >>>>
+System Clock Frequency (MHz)                      :12.000
+PCLKB Frequency (MHz)                             :3.000
+CTSU Operating Frequency (MHz)                    :3.000
+Operating Voltage (V)                             :3.300
+TSCAP Voltage (V)                                 :1.180
+---------- Phase1 ----------
+<< METHOD 0 >>
+[TS02]
+Measurement Value                                 : 9025
+Resistance Value (ohm)                            : 560
+Parasitic Capacitance (pF)                        : 28.287947
+Sensor Drive Pulse Frequency (MHz)                : 0.75
+
+[TS05]
+Measurement Value                                 : 10602
+Resistance Value (ohm)                            : 560
+Parasitic Capacitance (pF)                        : 33.608173
+Sensor Drive Pulse Frequency (MHz)                : 0.75
+
+
+---------- Phase2 ----------
+<< METHOD 0 >>
+[TS02]
+Sensor Drive Pulse Frequency (MHz)                : 0.75
+CTSUSNUM                                          : 1
+CTSUSSDIV                                         : 5
+CTSUSDPA                                          : 1
+CTSUSO                                            : 73
+
+[TS05]
+Sensor Drive Pulse Frequency (MHz)                : 0.75
+CTSUSNUM                                          : 1
+CTSUSSDIV                                         : 5
+CTSUSDPA                                          : 1
+CTSUSO                                            : 103
+
+
+---------- Phase3 ----------
+<< METHOD 0 >>
+[Button(self) 0]
+  << TS02 >>
+  Measurement Value (Off)                         : 20521
+  Measurement Value (On)                          : 54605
+  Threshold                                       : 20450
+  Hysteresis                                      : 1022
+
+[Button(self) 1]
+  << TS05 >>
+  Measurement Value (Off)                         : 20432
+  Measurement Value (On)                          : 51811
+  Threshold                                       : 18827
+  Hysteresis                                      : 941
+

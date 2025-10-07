@@ -1,0 +1,412 @@
+FSP Configuration
+  Board "Custom User Board (Any Device)"
+  R7FA4M2AD3CFL
+    part_number: R7FA4M2AD3CFL
+    rom_size_bytes: 524288
+    ram_size_bytes: 131072
+    data_flash_size_bytes: 8192
+    package_style: LQFP
+    package_pins: 48
+    number of cores: 1
+    
+  R7FA4M2AD3CFL
+  RA4M2
+    series: 4
+    
+  RA4M2 Family
+    Enable inline BSP IRQ functions: Enabled
+    Security: Exceptions: Exception Response: Non-Maskable Interrupt
+    Security: Exceptions: BusFault, HardFault, and NMI Target: Secure State
+    Security: System Reset Request Accessibility: Secure State
+    Security: Exceptions: Prioritize Secure Exceptions: Disabled
+    Security: System Reset Status Accessibility: Both Secure and Non-Secure State
+    Security: Battery Backup Accessibility: Both Secure and Non-Secure State
+    Security: SRAM Accessibility: SRAM Protection: Both Secure and Non-Secure State
+    Security: SRAM Accessibility: SRAM ECC: Both Secure and Non-Secure State
+    Security: SRAM Accessibility: Standby RAM: Regions 7-0 are all Secure.
+    Security: BUS Accessibility: Bus Security Attribution Register A: Both Secure and Non-Secure State
+    Security: BUS Accessibility: Bus Security Attribution Register B: Both Secure and Non-Secure State
+    Security: Uninitialized Non-Secure Application Fallback: Enable Uninitialized Non-Secure Application Fallback
+    Startup C-Cache Line Size: 32 Bytes
+    Clocks: HOCO FLL Function: Disabled
+    Main Oscillator Wait Time: 8163 cycles
+    
+  RA4M2 Device Options
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: Enabled
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: Independent WDT: Start Mode: IWDT is stopped after a reset
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: Independent WDT: Timeout Period: 2048 cycles
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: Independent WDT: Dedicated Clock Frequency Divisor: 128
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: Independent WDT: Window End Position:  0% (no window end position)
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: Independent WDT: Window Start Position: 100% (no window start position)
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: Independent WDT: Reset Interrupt Request Select: Reset is enabled
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: Independent WDT: Stop Control: Stop counting when in Sleep,Snooze modec, or Software Standby
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: WDT: Start Mode Select: Stop WDT after a reset (register-start mode)
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: WDT: Timeout Period: 16384 cycles
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: WDT: Clock Frequency Division Ratio: 128
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: WDT: Window End Position:  0% (no window end position)
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: WDT: Window Start Position: 100% (no window start position)
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: WDT: Reset Interrupt Request: Reset
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: WDT: Stop Control: Stop counting when entering Sleep mode
+    OFS Registers: OFS1 (Option Function Select Register 1) Settings: Disabled
+    OFS Registers: OFS1 (Option Function Select Register 1) Settings: Voltage Detection 0 Circuit Start: Voltage monitor 0 reset is disabled after reset
+    OFS Registers: OFS1 (Option Function Select Register 1) Settings: Voltage Detection 0 Level: 2.80 V
+    OFS Registers: OFS1 (Option Function Select Register 1) Settings: HOCO Oscillation Enable: HOCO oscillation is disabled after reset
+    OFS Registers: BPS (Block Protect Setting Register) Settings: Disabled
+    OFS Registers: BPS (Block Protect Setting Register) Settings: BPS0: 
+    OFS Registers: PBPS (Permanent Block Protect Setting Register) Settings: Disabled
+    OFS Registers: PBPS (Permanent Block Protect Setting Register) Settings: PBPS0: 
+    OFS Registers: OFS1_SEC (Option Function Select Register 1 Secure) Settings: Enabled
+    OFS Registers: OFS1_SEC (Option Function Select Register 1 Secure) Settings: Voltage Detection 0 Circuit Start: Voltage monitor 0 reset is disabled after reset
+    OFS Registers: OFS1_SEC (Option Function Select Register 1 Secure) Settings: Voltage Detection 0 Level: 2.80 V
+    OFS Registers: OFS1_SEC (Option Function Select Register 1 Secure) Settings: HOCO Oscillation Enable: HOCO oscillation is disabled after reset
+    OFS Registers: BPS_SEC (Block Protect Setting Register Secure) Settings: Disabled
+    OFS Registers: BPS_SEC (Block Protect Setting Register Secure) Settings: BPS_SEC0: 
+    OFS Registers: PBPS_SEC (Permanent Block Protect Setting Register Secure) Settings: Disabled
+    OFS Registers: PBPS_SEC (Permanent Block Protect Setting Register Secure) Settings: PBPS_SEC0: 
+    OFS Registers: OFS1_SEL (OFS1 Security Attribution) Settings: Enabled
+    OFS Registers: OFS1_SEL (OFS1 Security Attribution) Settings: Voltage Detection 0 Level Security Attribution: VDSEL setting loads from OFS1_SEC
+    OFS Registers: OFS1_SEL (OFS1 Security Attribution) Settings: Voltage Detection 0 Circuit Start Security Attribution: LVDAS setting loads from OFS1_SEC
+    OFS Registers: BPS_SEL (BPS Security Attribution) Settings: Disabled
+    OFS Registers: BPS_SEL (BPS Security Attribution) Settings: BPS_SEL0: 
+    
+  RA4M2 event data
+  RA Common
+    Main stack size (bytes): 0x400
+    Heap size (bytes): 0x2000
+    Bootloader Secondary XIP: Disabled
+    MCU Vcc (mV): 3300
+    Parameter checking: Disabled
+    Assert Failures: Return FSP_ERR_ASSERTION
+    Clock Registers not Reset Values during Startup: Disabled
+    Main Oscillator Populated: Populated
+    PFS Protect: Enabled
+    C Runtime Initialization : Enabled
+    Early BSP Initialization : Disabled
+    Main Oscillator Clock Source: Crystal or Resonator
+    Subclock Populated: Populated
+    Subclock Drive (Drive capacitance availability varies by MCU): Standard/Normal mode
+    Subclock Stabilization Time (ms): 1000
+    
+  Clocks
+    XTAL 12000000Hz
+    HOCO 20MHz
+    PLL Src: XTAL
+    PLL Div /1
+    PLL Mul x10.0
+    PLL2 Src: XTAL
+    PLL2 Div /1
+    PLL2 Mul x20.0
+    Clock Src: XTAL
+    CLKOUT Src: XTAL
+    USBCLK Src: PLL2
+    ICLK Div /1
+    PCLKA Div /2
+    PCLKB Div /4
+    PCLKC Div /4
+    PCLKD Div /2
+    FCLK Div /2
+    CLKOUT Div /1
+    USBCLK Div /5
+    
+  Pin Configurations
+    R7FA4M2AD3CFL.pincfg -> g_bsp_pin_cfg
+      AVCC0 42 ANALOG0_AVCC0 - - - - - - - - IO "Read only" - 
+      AVSS0 43 ANALOG0_AVSS0 - - - - - - - - IO "Read only" - 
+      P000 48 ADC0_AN000 - - - "Analog mode" - None "ADC0: AN000; ICU0: IRQ06" - IO - - 
+      P001 47 ICU0_IRQ07 - - IRQ07 "IRQ mode" - "input pull-up" "ADC0: AN001; ICU0: IRQ07" - IO - - 
+      P002 46 GPIO LED_D2 - None "Output mode (Initial Low)" CMOS - "ADC0: AN002; ICU0: IRQ08" - IO - - 
+      P013 40 GPIO - - - "Input mode" - None "ADC0: AN011; ANALOG0: VREFL" - IO - - 
+      P014 39 - - - - Disabled - - "ADC0: AN012; DAC0: DA0" - None - - 
+      P015 38 - - - - Disabled - - "ADC0: AN013; DAC1: DA1; ICU0: IRQ13" - None - - 
+      P100 36 SCI0_RXD0 MISO Low None "Peripheral mode" CMOS None "AGT0: AGTIO0; GPT_POEG0: GTETRGA; GPT5: GTIOC5B; ICU0: IRQ02; QSPI0: QSPCLK; SCI0: RXD0; SCI0: SCL0; SCI1: SCK1" - IO - - 
+      P101 35 SCI0_TXD0 - Low None "Peripheral mode" CMOS None "AGT0: AGTEE0; GPT_POEG1: GTETRGB; GPT5: GTIOC5A; ICU0: IRQ01; QSPI0: QIO1; SCI0: SDA0; SCI0: TXD0; SCI1: CTSRTS1" - IO - - 
+      P102 34 SCI0_SCK0 - Low - "Peripheral mode" CMOS None "ADC0: ADTRG0; AGT0: AGTO0; CAN0: CRX0; GPT_OPS0: GTOWLO; GPT2: GTIOC2B; QSPI0: QIO0; SCI0: SCK0" - IO - - 
+      P103 33 GPIO SPI_CS Low - "Output mode (Initial High)" CMOS - "AGT2: AGTIO2; CAN0: CTX0; GPT_OPS0: GTOWUP; GPT2: GTIOC2A; QSPI0: QIO3; SCI0: CTSRTS0" - IO - - 
+      P104 32 GPIO DC Low None "Output mode (Initial Low)" CMOS - "AGT2: AGTEE2; GPT_POEG1: GTETRGB; GPT1: GTIOC1B; ICU0: IRQ01; QSPI0: QIO2" - IO - - 
+      P108 25 DEBUG0_SWDIO - Low - "Peripheral mode" CMOS None "AGT3: AGTOA3; DEBUG0: SWDIO; DEBUG0: TMS; GPT_OPS0: GTOULO; GPT0: GTIOC0B; SCI9: CTSRTS9; SPI0: SSLA0" - IO - - 
+      P109 26 SCI9_TXD9 - Low - "Peripheral mode" CMOS None "AGT3: AGTOB3; CGC0: CLKOUT; DEBUG0: TDO; DEBUG0: TRACESWO; GPT_OPS0: GTOVUP; GPT1: GTIOC1A; SCI9: SDA9; SCI9: TXD9; SPI0: MOSIA" - IO - - 
+      P110 27 SCI9_RXD9 - Low None "Peripheral mode" CMOS None "AGT3: AGTEE3; DEBUG0: TDI; GPT_OPS0: GTOVLO; GPT1: GTIOC1B; ICU0: IRQ03; SCI2: CTSRTS2; SCI9: RXD9; SCI9: SCL9; SPI0: MISOA" - IO - - 
+      P111 28 GPIO - - None "Input mode" - None "AGT5: AGTOA5; GPT3: GTIOC3A; ICU0: IRQ04; SCI2: SCK2; SCI9: SCK9; SPI0: RSPCKA" - IO - - 
+      P112 29 GPIO - - - "Input mode" - None "AGT5: AGTOB5; GPT3: GTIOC3B; QSPI0: QSSL; SCI1: SCK1; SCI2: SDA2; SCI2: TXD2; SPI0: SSLA0; SSI0: SSIBCK0" - IO - - 
+      P200 21 - - - - Disabled - - "ICU0: NMI" - None - - 
+      P201 20 - - - - Disabled - - "SYSTEM0: MD" - None - - 
+      P206 18 CTSU0_TS02 - Low None "Peripheral mode" CMOS None "CTSU0: TS02; GPT_OPS0: GTIU; ICU0: IRQ00; IIC1: SDA1; SCI4: RXD4; SCI4: SCL4; SCI9: CTS9; SDHI0: SD0DAT2; SPI0: SSLA1; SSI0: SSIDATA0; USB_FS0: USB_VBUSEN" - IO - - 
+      P207 17 CTSU0_TSCAP - Low - "Peripheral mode" CMOS None "CTSU0: TSCAP; QSPI0: QSSL; SCI4: SDA4; SCI4: TXD4; SPI0: SSLA2" - IO - - 
+      P212 8 - - - - Disabled - - "AGT1: AGTEE1; CGC0: EXTAL; GPT_POEG3: GTETRGD; GPT0: GTIOC0B; ICU0: IRQ03; SCI1: RXD1; SCI1: SCL1" - None - - 
+      P213 7 - - - - Disabled - - "AGT2: AGTEE2; CGC0: XTAL; GPT_POEG2: GTETRGC; GPT0: GTIOC0A; ICU0: IRQ02; SCI1: SDA1; SCI1: TXD1" - None - - 
+      P300 24 DEBUG0_SWCLK - Low - "Peripheral mode" CMOS None "DEBUG0: SWCLK; DEBUG0: TCK; GPT_OPS0: GTOUUP; GPT0: GTIOC0A; SPI0: SSLA1" - IO - - 
+      P301 23 SCI2_SCL2 - Low None "Peripheral mode" "n-ch open drain" None "AGT0: AGTIO0; GPT_OPS0: GTOULO; GPT4: GTIOC4B; ICU0: IRQ06; SCI2: RXD2; SCI2: SCL2; SCI9: CTSRTS9; SPI0: SSLA2" - IO - - 
+      P302 22 SCI2_SDA2 - Low None "Peripheral mode" "n-ch open drain" None "GPT_OPS0: GTOUUP; GPT4: GTIOC4A; ICU0: IRQ05; SCI2: SDA2; SCI2: TXD2; SPI0: SSLA3" - IO - - 
+      P402 1 - - - - Disabled - - "AGT0: AGTIO0; AGT1: AGTIO1; AGT2: AGTIO2; AGT3: AGTIO3; CAC0: CACREF; CAN0: CRX0; ICU0: IRQ04; RTC0: RTCIC0; SCI4: CTS4; SSI_COMMON0: AUDIO_CLK" - None - - 
+      P407 12 - - - - Disabled - - "ADC0: ADTRG0; AGT0: AGTIO0; CTSU0: TS03; GPT6: GTIOC6A; IIC0: SDA0; RTC0: RTCOUT; SCI4: CTSRTS4; SPI0: SSLA3; USB_FS0: USB_VBUS" - None - - 
+      P408 11 - - - - Disabled - - "AGT2: AGTOB2; CTSU0: TS04; GPT_OPS0: GTOWLO; GPT6: GTIOC6B; ICU0: IRQ07; IIC0: SCL0; SCI3: RXD3; SCI3: SCL3; SCI4: CTS4; USB_FS0: USB_ID" - None - - 
+      P409 10 CTSU0_TS05 - Low None "Peripheral mode" CMOS None "AGT2: AGTOA2; CTSU0: TS05; GPT_OPS0: GTOWUP; ICU0: IRQ06; SCI3: SDA3; SCI3: TXD3; USB_FS0: USB_EXICEN" - IO - - 
+      P500 37 GPIO RES Low - "Output mode (Initial High)" CMOS - "ADC0: AN016; AGT0: AGTOA0; CAC0: CACREF; GPT_OPS0: GTIU; QSPI0: QSPCLK; USB_FS0: USB_VBUSEN" - IO - - 
+      RES 19 SYSTEM0_RES - - - - - - - - IO "Read only" - 
+      USBDM 14 USB_FS0_USB_DM - - - - - - - - IO "Read only" - 
+      USBDP 15 USB_FS0_USB_DP - - - - - - - - IO "Read only" - 
+      VBATT 2 SYSTEM0_VBATT - - - - - - - - IO "Read only" - 
+      VCC 9 SYSTEM0_VCC - - - - - - - - IO "Read only" - 
+      VCC 30 SYSTEM0_VCC - - - - - - - - IO "Read only" - 
+      VCCUSB 16 USB_FS0_VCC_USB - - - - - - - - IO "Read only" - 
+      VCL0 3 SYSTEM0_VCL0 - - - - - - - - IO "Read only" - 
+      VREFH 41 ANALOG0_VREFH - - - - - - - - IO "Read only" - 
+      VREFH0 45 ANALOG0_VREFH0 - - - - - - - - IO "Read only" - 
+      VREFL0 44 ANALOG0_VREFL0 - - - - - - - - IO "Read only" - 
+      VSS 6 SYSTEM0_VSS - - - - - - - - IO "Read only" - 
+      VSS 31 SYSTEM0_VSS - - - - - - - - IO "Read only" - 
+      VSSUSB 13 USB_FS0_VSS_USB - - - - - - - - IO "Read only" - 
+      XCIN 4 CGC0_XCIN - - - - - - - - IO "Read only" - 
+      XCOUT 5 CGC0_XCOUT - - - - - - - - IO "Read only" - 
+    
+  User Events
+    
+  User Event Links
+    
+  Linker Section Mappings
+    *(.bss.g_heap): RAM Uninitialized
+    *(.bss.g_main_stack): RAM Uninitialized
+    
+  Module "I/O Port (r_ioport)"
+    Parameter Checking: Default (BSP)
+    CCD Support: Not Supported
+    
+  Module "Azure RTOS ThreadX Port (rm_threadx_port)"
+  Module "UART (r_sci_uart)"
+    Parameter Checking: Default (BSP)
+    FIFO Support: Disable
+    DTC Support: Disable
+    Flow Control Support: Disable
+    RS-485 Support: Disable
+    IrDA Support: Disabled
+    
+  Module "External IRQ (r_icu)"
+    Parameter Checking: Default (BSP)
+    
+  Module "SPI (r_sci_spi)"
+    Parameter Checking: Default (BSP)
+    DTC Support: Enabled
+    
+  Module "Transfer (r_dtc)"
+    Parameter Checking: Default (BSP)
+    Linker section to keep DTC vector table: .fsp_dtc_vector_table
+    
+  Module "I2C Master (r_sci_i2c)"
+    Parameter Checking: Default (BSP)
+    DTC on Transmission and Reception: Disabled
+    10-bit slave addressing: Disabled
+    
+  Module "ADC (r_adc)"
+    Parameter Checking: Default (BSP)
+    
+  Module "Touch (rm_touch)"
+    Parameter Checking: Default (BSP)
+    Support for QE monitoring using UART: Disabled
+    Support for QE Tuning using UART: Disabled
+    Type of chattering suppression: TypeA : Counter of exceed threshold is hold within hysteresis range
+    
+  Module "CTSU (r_ctsu)"
+    Parameter Checking: Default (BSP)
+    Support for using DTC: Disabled
+    Enable automatic judgment mode: Disabled
+    Interrupt priority level: Priority 12
+    
+  Azure RTOS ThreadX
+    General: Custom tx_user.h: 
+    General: Error Checking: Enabled
+    Timer: Timer Ticks Per Second: 100
+    General: Max Priorities: 32
+    General: Minimum Stack: 200
+    Timer: Timer Thread Stack Size: 1024
+    Timer: Timer Thread Priority: 0
+    Timer: Timer Process In ISR: Enabled
+    Timer: Reactivate Inline: Disabled
+    General: Stack Filling: Enabled
+    General: Preemption Threshold: Disabled
+    Timer: Timer: Enabled
+    General: Notify Callbacks: Disabled
+    General: Inline Thread Resume Suspend: Disabled
+    General: Not Interruptable: Disabled
+    Trace: Event Trace: Disabled
+    Trace: Trace Buffer Name: g_tx_trace_buffer
+    Trace: Memory section for Trace Buffer: .bss
+    Trace: Trace Buffer Size: 65536
+    Trace: Trace Buffer Number of Registries: 30
+    Performance: Block Pool Performance Info: Disabled
+    Performance: Byte Pool Performance Info: Disabled
+    Performance: Event Flags Performance Info: Disabled
+    Performance: Mutex Performance Info: Disabled
+    Performance: Queue Performance Info: Disabled
+    Performance: Semaphore Performance Info: Disabled
+    Performance: Thread Performance Info: Disabled
+    Performance: Timer Performance Info: Disabled
+    RA: Hardware Thread Stack Monitoring: Disabled
+    Interrupts: SysTick Interrupt Priority: Priority 0 (highest)
+    Interrupts: Maximum Interrupt Priority: Priority 0 (highest)
+    General: IAR Library Support: Disabled
+    General: BSD Support: Disabled
+    General: FileX Pointer: Enabled
+    
+  HAL
+    Instance "g_ioport I/O Port (r_ioport)"
+      Name: g_ioport
+      1st Port ELC Trigger Source: Disabled
+      2nd Port ELC Trigger Source: Disabled
+      3rd Port ELC Trigger Source: Disabled
+      4th Port ELC Trigger Source: Disabled
+      Pin Configuration Name: g_bsp_pin_cfg
+      
+    Instance "Azure RTOS ThreadX Port (rm_threadx_port)"
+    Instance "g_uart9 UART (r_sci_uart)"
+      General: Name: g_uart9
+      General: Channel: 9
+      General: Data Bits: 8bits
+      General: Parity: None
+      General: Stop Bits: 1bit
+      Baud: Baud Rate: 115200
+      Baud: Baud Rate Modulation: Enabled
+      Baud: Max Error (%): 5
+      Flow Control: CTS/RTS Selection: Hardware RTS
+      Flow Control: Software RTS Port: Disabled
+      Flow Control: Software RTS Pin: Disabled
+      Extra: Clock Source: Internal Clock
+      Extra: Start bit detection: Falling Edge
+      Extra: Noise Filter: Disable
+      Extra: Receive FIFO Trigger Level: Max
+      Extra: IrDA: Enable: Disabled
+      Extra: IrDA: RXD Polarity Switching: Normal
+      Extra: IrDA: TXD Polarity Switching: Normal
+      Extra: RS-485: DE Pin: Disable
+      Extra: RS-485: DE Pin Polarity: Active High
+      Extra: RS-485: DE Port Number: Disabled
+      Extra: RS-485: DE Pin Number: Disabled
+      Interrupts: Callback: user_uart_callback
+      Interrupts: Receive Interrupt Priority: Priority 2
+      Interrupts: Transmit Data Empty Interrupt Priority: Priority 2
+      Interrupts: Transmit End Interrupt Priority: Priority 2
+      Interrupts: Error Interrupt Priority: Priority 2
+      
+    Instance "g_external_irq7 External IRQ (r_icu)"
+      Name: g_external_irq7
+      Channel: 7
+      Trigger: Falling
+      Digital Filtering: Disabled
+      Filter Source: PCLK filter
+      Digital Filtering Sample Clock (Only valid when Digital Filtering is Enabled): PCLK / 64
+      Callback: user_irq7_callback
+      Pin Interrupt Priority: Priority 15
+      
+    Instance "g_spi0 SPI (r_sci_spi)"
+      Name: g_spi0
+      Channel: 0
+      Operating Mode: Master
+      Clock Phase: Data sampling on odd edge, data variation on even edge
+      Clock Polarity: Low when idle
+      Mode Fault Error: Disable
+      Bit Order: MSB First
+      Callback: sci_spi_callback
+      Receive Interrupt Priority: Priority 12
+      Transmit Interrupt Priority: Priority 12
+      Transmit End Interrupt Priority: Priority 12
+      Error Interrupt Priority: Priority 12
+      Bitrate: 8000000
+      Bitrate Modulation: Disabled
+      
+      Instance "g_transfer0 Transfer (r_dtc) SCI0 TXI (Transmit data empty)"
+        Name: g_transfer0
+        Mode: Normal
+        Transfer Size: 1 Byte
+        Destination Address Mode: Fixed
+        Source Address Mode: Incremented
+        Repeat Area (Unused in Normal Mode): Source
+        Interrupt Frequency: After all transfers have completed
+        Number of Transfers: 0
+        Number of Blocks (Valid only in Block Mode): 0
+        Number of Transfer Descriptors: 1
+        Activation Source: SCI0 TXI (Transmit data empty)
+        
+      Instance "g_transfer1 Transfer (r_dtc) SCI0 RXI (Receive data full)"
+        Name: g_transfer1
+        Mode: Normal
+        Transfer Size: 1 Byte
+        Destination Address Mode: Incremented
+        Source Address Mode: Fixed
+        Repeat Area (Unused in Normal Mode): Destination
+        Interrupt Frequency: After all transfers have completed
+        Number of Transfers: 0
+        Number of Blocks (Valid only in Block Mode): 0
+        Number of Transfer Descriptors: 1
+        Activation Source: SCI0 RXI (Receive data full)
+        
+    Instance "g_i2c2 I2C Master (r_sci_i2c)"
+      Name: g_i2c2
+      Channel: 2
+      Slave Address : 0x00
+      Address Mode: 7-Bit
+      Rate: Standard
+      Custom Rate (bps): 100000
+      SDA Output Delay (nano seconds): 300
+      Noise filter setting: Use clock signal divided by 1 with noise filter
+      Bit Rate Modulation: Disable
+      Callback: sci_i2c_master_callback
+      Interrupt Priority Level: Priority 12
+      RX Interrupt Priority Level [Only used when DTC is enabled]: Disabled
+      
+    Instance "g_adc0 ADC (r_adc)"
+      General: Name: g_adc0
+      General: Unit: 0
+      General: Resolution: 12-Bit
+      General: Alignment: Right
+      General: Clear after read: On
+      General: Mode: Single Scan
+      General: Double-trigger: Disabled
+      Input: Channel Scan Mask (channel availability varies by MCU): Channel 0
+      Input: Group B Scan Mask (channel availability varies by MCU): 
+      Interrupts: Normal/Group A Trigger: Software
+      Interrupts: Group B Trigger: Disabled
+      Interrupts: Group Priority (Valid only in Group Scan Mode): Group A cannot interrupt Group B
+      Input: Add/Average Count: Disabled
+      Input: Reference Voltage control: VREFH0/VREFH
+      Input: Addition/Averaging Mask (channel availability varies by MCU and unit): 
+      Input: Sample and Hold: Sample and Hold Channels (Available only on selected MCUs): 
+      Input: Sample and Hold: Sample Hold States (Applies only to channels 0, 1, 2): 24
+      Input: Window Compare: Window Mode: Disabled
+      Input: Window Compare: Event Output: OR
+      Input: Window Compare: Window A: Enable: Disabled
+      Input: Window Compare: Window A: Channels to compare (channel availability varies by MCU and unit): 
+      Input: Window Compare: Window A: Channel comparison mode (channel availability varies by MCU and unit): 
+      Input: Window Compare: Window A: Lower Reference: 0
+      Input: Window Compare: Window A: Upper Reference: 0
+      Input: Window Compare: Window B: Enable: Disabled
+      Input: Window Compare: Window B: Channel to compare (channel availability varies by MCU and unit): Channel 0
+      Input: Window Compare: Window B: Comparison mode: Less Than or Outside Window
+      Input: Window Compare: Window B: Lower Reference: 0
+      Input: Window Compare: Window B: Upper Reference: 0
+      Interrupts: Callback: adc_callback
+      Interrupts: Scan End Interrupt Priority: Priority 15
+      Interrupts: Scan End Group B Interrupt Priority: Disabled
+      Interrupts: Window Compare A Interrupt Priority: Disabled
+      Interrupts: Window Compare B Interrupt Priority: Disabled
+      Extra: ADC Ring Buffer: Disabled
+      
+    Instance "Touch (rm_touch)"
+      
+      Instance " CTSU (r_ctsu)"
+        Scan Start Trigger: Software
+        
+  Thread "ui_thread"
+    Symbol: ui_thread
+    Name: ui_thread
+    Stack size (bytes): 2048
+    Priority: 1
+    Auto start: Enabled
+    Time slicing interval (ticks): 1
+    
+  Thread "work_thread"
+    Symbol: work_thread
+    Name: work_thread
+    Stack size (bytes): 1024
+    Priority: 1
+    Auto start: Enabled
+    Time slicing interval (ticks): 1
+    
